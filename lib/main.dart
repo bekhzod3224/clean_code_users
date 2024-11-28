@@ -8,9 +8,6 @@ import 'package:tzalif/presentation/pages/user_list_page.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Инициализация API провайдера
-
-  // Создаем репозиторий
   final repository = UserRepository(
       apiService: apiService, databaseHelper: localDatabaseService);
 
@@ -22,8 +19,6 @@ void main() async {
 class MyApp extends StatelessWidget {
   final UserRepository repository;
   const MyApp({super.key, required this.repository});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

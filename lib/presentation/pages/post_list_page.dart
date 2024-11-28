@@ -4,7 +4,7 @@ import 'package:tzalif/core/repo_const.dart';
 import 'package:tzalif/data/repositories/comment_repository.dart';
 import 'package:tzalif/presentation/bloc/comment/comment_bloc.dart';
 import 'package:tzalif/presentation/bloc/post/post_bloc.dart';
-import 'package:tzalif/presentation/pages/post_detail_page.dart';
+import 'package:tzalif/presentation/pages/comment_list.dart';
 
 class PostsList extends StatefulWidget {
   const PostsList({super.key});

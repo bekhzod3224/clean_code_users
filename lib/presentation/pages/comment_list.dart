@@ -32,14 +32,7 @@ class _CommentListState extends State<CommentList> {
                   child: ListTile(
                     title: Text(user.name!),
                     subtitle: Text(user.body!),
-                    onTap: () {
-                      // Navigator.push(
-                      //   context,
-                      //   MaterialPageRoute(
-                      //     builder: (context) => UserDetailPage(user: user),
-                      //   ),
-                      // );
-                    },
+                    onTap: () {},
                   ),
                 );
               },

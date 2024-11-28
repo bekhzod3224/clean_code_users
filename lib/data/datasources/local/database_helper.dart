@@ -60,7 +60,7 @@ class DatabaseHelper {
     for (var user in users) {
       await db.insert(
         'users',
-        user.toJson(), // Ma'lumotni Map formatida yuborish
+        user.toJson(), 
         conflictAlgorithm: ConflictAlgorithm.replace,
       );
     }
@@ -72,7 +72,7 @@ class DatabaseHelper {
     for (var post in posts) {
       await db.insert(
         'posts',
-        post.toJson(), // Ma'lumotni Map formatida yuborish
+        post.toJson(), 
         conflictAlgorithm: ConflictAlgorithm.replace,
       );
     }
@@ -84,7 +84,7 @@ class DatabaseHelper {
     for (var comment in comments) {
       await db.insert(
         'comments',
-        comment.toJson(), // Ma'lumotni Map formatida yuborish
+        comment.toJson(), 
         conflictAlgorithm: ConflictAlgorithm.replace,
       );
     }
@@ -114,5 +114,4 @@ class DatabaseHelper {
     });
   }
 
-  // Implement similar methods for posts and comments
 }
